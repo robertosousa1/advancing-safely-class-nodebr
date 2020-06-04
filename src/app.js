@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import redis from 'redis';
 import RateLimit from 'express-rate-limit';
 import RateLimitRedis from 'rate-limit-redis';
+import session from 'express-session';
 import Youch from 'youch';
 import * as Sentry from '@sentry/node';
 import 'express-async-errors';
@@ -49,6 +50,18 @@ class App {
         })
       );
     }
+
+    this.server.use(
+      session({
+        secret: 'mySecret',
+        key: 'myCookieSession',
+        cookie: {
+          httpOnly: true,
+          secure: true,
+          expires: new Date(Date.now() + 60 * 60 * 1000),
+        },
+      })
+    );
   }
 
   routes() {

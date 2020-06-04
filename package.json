@@ -16,6 +16,7 @@
     "express-brute": "^1.0.1",
     "express-brute-redis": "^0.0.1",
     "express-rate-limit": "^5.1.3",
+    "express-session": "^1.17.1",
     "faker": "^4.1.0",
     "helmet": "^3.22.0",
     "jsonwebtoken": "^8.5.1",
