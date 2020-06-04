@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import Brute from 'express-brute';
-import BruteKnex from 'brute-knex';
+import BruteRedis from 'express-brute-redis';
 
 import UserController from './app/controllers/UserController';
 import SessionController from './app/controllers/SessionController';
@@ -10,8 +10,9 @@ import authMiddleware from './app/middlewares/auth';
 
 const routes = new Router();
 
-const bruteStore = new BruteKnex({
-  createTable: true,
+const bruteStore = new BruteRedis({
+  host: process.env.HOST_REDIS,
+  port: process.env.PORT_REDIS,
 });
 
 const bruteForce = new Brute(bruteStore, {
