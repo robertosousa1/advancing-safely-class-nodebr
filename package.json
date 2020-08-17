@@ -25,7 +25,7 @@
     "redis": "^3.0.2",
     "sqlite3": "^4.2.0",
     "youch": "^2.0.10",
-    "yup": "^0.29.1"
+    "yup": "^0.29.2"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
