@@ -24,7 +24,7 @@
     "rate-limit-redis": "^2.0.0",
     "redis": "^3.0.2",
     "sqlite3": "^4.2.0",
-    "youch": "^2.0.10",
+    "youch": "^2.1.0",
     "yup": "^0.29.1"
   },
   "devDependencies": {
