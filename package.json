@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@sentry/node": "^5.19.0",
@@ -25,7 +27,8 @@
     "redis": "^3.1.1",
     "sqlite3": "^4.2.0",
     "youch": "^2.1.0",
-    "yup": "^0.29.1"
+    "yup": "^0.29.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
@@ -36,5 +39,6 @@
     "nodemon": "^2.0.0",
     "prettier": "^1.19.1",
     "sucrase": "^3.10.1"
-  }
+  },
+  "snyk": true
 }
