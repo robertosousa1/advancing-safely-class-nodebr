@@ -7,16 +7,16 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
-    "@sentry/node": "^5.19.0",
+    "@sentry/node": "^7.75.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.21.1",
     "express-async-errors": "^3.1.1",
     "express-brute": "^1.0.1",
     "express-brute-redis": "^0.0.1",
     "express-rate-limit": "^5.2.3",
-    "express-session": "^1.17.1",
+    "express-session": "^1.18.1",
     "faker": "^4.1.0",
     "helmet": "^3.22.1",
     "jsonwebtoken": "^8.5.1",
@@ -24,7 +24,7 @@
     "rate-limit-redis": "^2.0.0",
     "redis": "^3.1.1",
     "sqlite3": "^4.2.0",
-    "youch": "^2.1.0",
+    "youch": "^3.3.4",
     "yup": "^0.29.1"
   },
   "devDependencies": {
